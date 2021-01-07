@@ -261,3 +261,7 @@ h3 {
   border: none;
   border-radius: 1rem;
 }
+/** Footer **/
+.footer {
+  text-align: center;
+}
