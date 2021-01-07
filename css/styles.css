@@ -23,66 +23,66 @@
 /** Globales **/
 /** en html y body fijamos font-size: 62.5% y 16px respectivamente
    para utilizar el rem de manera más eficaz **/
-   html {
-    font-size: 62.5%;
-    box-sizing: border-box; /* línea de código del snippet para box Model*/
-    scroll-snap-type: y mandatory; /* Para que al navegar se detenga por secciones, 
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; /* línea de código del snippet para box Model*/
+  scroll-snap-type: y mandatory; /* Para que al navegar se detenga por secciones, 
                                     para que sea verticalmente y, para horizontalmente x */
+}
+/** Scroll-snap**/
+.servicios,
+.navegacion-principal,
+.formulario {
+  scroll-snap-stop: always;
+  scroll-snap-align: center;
+}
+body {
+  font-size: 16px; /*1rem = 10px*/
+  font-family: "Krub", sans-serif;
+  /*esta propiedad nos permite degradar el background color*/
+  background-image: linear-gradient(
+    to top,
+    var(--grisClaro) 0%,
+    /*color , desde donde comienza*/ var(--blanco) 100%
+      /*color, desde donde termina*/
+  );
+}
+@media (min-width: 769px) {
+  .contenedor {
+    max-width: 120rem;
+    margin: 0 25rem;
   }
-  /** Scroll-snap**/
-  .servicios,
-  .navegacion-principal,
-  .formulario {
-    scroll-snap-stop: always;
-    scroll-snap-align: center;
-  }
-  body {
-    font-size: 16px; /*1rem = 10px*/
-    font-family: "Krub", sans-serif;
-    /*esta propiedad nos permite degradar el background color*/
-    background-image: linear-gradient(
-      to top,
-      var(--grisClaro) 0%,
-      /*color , desde donde comienza*/ var(--blanco) 100%
-        /*color, desde donde termina*/
-    );
-  }
-  @media (min-width: 769px) {
-    .contenedor {
-      max-width: 120rem;
-      margin: 0 25rem;
-    }
-  }
+}
+.boton {
+  background-color: var(--secunadio);
+  color: var(--blanco);
+  text-decoration: none;
+  padding: 1rem 3rem;
+  margin-top: 1.5rem;
+  border-radius: 0.8rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase; /*aplica mayúsculas */
+  text-align: center;
+  width: 90%;
+  border: none;
+}
+@media (min-width: 768px) {
   .boton {
-    background-color: var(--secunadio);
-    color: var(--blanco);
-    text-decoration: none;
-    padding: 1rem 3rem;
-    margin-top: 1.5rem;
-    border-radius: 0.8rem;
-    font-size: 2rem;
-    font-weight: bold;
-    text-transform: uppercase; /*aplica mayúsculas */
-    text-align: center;
-    width: 90%;
-    border: none;
+    width: auto;
   }
-  @media (min-width: 768px) {
-    .boton {
-      width: auto;
-    }
-  }
-  .boton:hover {
-    cursor: pointer;
-  }
-  .sombra {
-    -webkit-box-shadow: 0px 5px 15px 0px rgba(71, 71, 71, 0.35);
-    -moz-box-shadow: 0px 5px 15px 0px rgba(71, 71, 71, 0.35);
-    box-shadow: 0px 5px 15px 0px rgba(71, 71, 71, 0.35);
-    background-color: var(--blanco);
-    border-radius: 0.8rem;
-    padding: 2rem;
-  }
+}
+.boton:hover {
+  cursor: pointer;
+}
+.sombra {
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(71, 71, 71, 0.35);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(71, 71, 71, 0.35);
+  box-shadow: 0px 5px 15px 0px rgba(71, 71, 71, 0.35);
+  background-color: var(--blanco);
+  border-radius: 0.8rem;
+  padding: 2rem;
+}
 /*bloque de código del snippet*/
 /*Este snippet nos permite que nuestros box en css no se 
   entre mezclen con los padding y margin*/
@@ -273,4 +273,3 @@ h3 {
 .footer {
   text-align: center;
 }
-+
