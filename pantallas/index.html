@@ -21,7 +21,7 @@
     <div class="nav-bg">
       <nav class="navegacion-principal contenedor">
         <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Sobre mi</a>
+        <a href="#">Sobre mi</a>
         <a href="#">Clientes</a>
         <a href="#">Contacto</a>
       </nav>
@@ -169,39 +169,54 @@
           </p>
         </section>
       </div>
+
+      <section>
+        <h2>Contacto</h2>
+
+        <form class="formulario">
+          <fieldset>
+            <legend>Contáctame llenando todos los campos</legend>
+
+            <div class="contenedor-campos">
+              <div class="campo">
+                <label>Nombre</label>
+                <input
+                  class="input-text"
+                  type="text"
+                  placeholder="Ingrese su nombre"
+                />
+              </div>
+
+              <div class="campo">
+                <label>Teléfono</label>
+                <input
+                  class="input-text"
+                  type="tel"
+                  placeholder="Ingrese su teléfono"
+                />
+              </div>
+
+              <div class="campo">
+                <label>Correo</label>
+                <input
+                  class="input-text"
+                  type="email"
+                  placeholder="Ingrese su correo"
+                />
+              </div>
+
+              <div class="campo">
+                <label>Mensaje</label>
+                <textarea class="input-text"></textarea>
+              </div>
+            </div>
+            <div class="alinear-derecha flex">
+              <input class="boton w-sm-100" type="submit" value="Enviar" />
+            </div>
+          </fieldset>
+        </form>
+      </section>
     </main>
-
-    <section>
-      <h2>Contacto</h2>
-
-      <form>
-        <fieldset>
-          <legend>Contáctame llenando todos los campos</legend>
-
-          <div>
-            <label>Nombre</label>
-            <input type="text" placeholder="Ingrese su nombre" />
-          </div>
-
-          <div>
-            <label>Teléfono</label>
-            <input type="tel" placeholder="Ingrese su teléfono" />
-          </div>
-
-          <div>
-            <label>Correo</label>
-            <input type="email" placeholder="Ingrese su correo" />
-          </div>
-
-          <div>
-            <label>Mensaje</label>
-            <textarea></textarea>
-          </div>
-
-          <input type="submit" value="Enviar" />
-        </fieldset>
-      </form>
-    </section>
 
     <footer>
       <p>Todos los derechos reservados. Marcelo Alarcón Freelancer</p>
